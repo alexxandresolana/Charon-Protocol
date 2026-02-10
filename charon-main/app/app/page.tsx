@@ -19,8 +19,8 @@ import { Program, AnchorProvider, utils, BN } from "@coral-xyz/anchor";
 import { encryptSecret, exportKey } from "@/utils/crypto";
 import { generateClaimProof } from "@/utils/zk";
 import { encryptForHeir } from "@/utils/nacl";
-import idl from "../../target/idl/charon.json"; // Adjusted path
-import { Charon } from "../../target/types/charon"; // Import generated Anchor types
+import idl from "../target/idl/charon.json";
+import type { Charon } from "../target/types/charon";
 
 // Poseidon hash helper from circomlibjs
 import { buildPoseidon } from "circomlibjs";
